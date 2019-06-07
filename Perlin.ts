@@ -48,10 +48,10 @@ export class Perlin {
 
         let A:  number = p[X    ] + Y,
             AA: number = p[A    ] + Z,
-            AB: number = p[A + 1] + Z,      // HASH COORDINATES OF
+            AB: number = p[A + 1] + Z,
             B:  number = p[X + 1] + Y,
             BA: number = p[B    ] + Z,
-            BB: number = p[B + 1] + Z;      // THE 8 CUBE CORNERS,
+            BB: number = p[B + 1] + Z;
         
         return lerp(w, lerp(v, lerp(u, grad(p[AA  ], x  , y  , z   ),
                                        grad(p[BA  ], x-1, y  , z   )),
