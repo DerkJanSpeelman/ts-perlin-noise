@@ -14,7 +14,7 @@ export class Perlin {
         return p;
     }
 
-    static noise = (x: number, y: number = 0, z: number = 0): number => {
+    public static noise = (x: number, y: number = 0, z: number = 0): number => {
 
         const perm: number[] = Perlin.perm;
         const p: number[] = Perlin.permutation(perm);
